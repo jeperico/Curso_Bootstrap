@@ -220,4 +220,16 @@ header, .navbar{
 
 /* DATAS */
 
+/* CARDS */
+
+.card-body{
+    text-align: center;
+    min-height: 121px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* CARDS */
+
 /* NAVBAR SETTINGS */
