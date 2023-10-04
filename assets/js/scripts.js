@@ -98,6 +98,7 @@ $(document).ready(function(){
     setTimeout(function() {
 
         $('#data-area').parallax({imageSrc: './assets/images/cidadeparallax.png'})
+        $('#apply-area').parallax({imageSrc: './assets/images/pattern.png'})
 
     }, 250);
 

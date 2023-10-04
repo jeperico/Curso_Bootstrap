@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root{
+    --color-blue: #65DAF9;
+    --color-gray: #444;
+    --color-gray-too: #333;
+    --color-white: #FFF;
+    --color-black: #000;
+}
+
 
 /* GENERAL SETTINGS */
 
@@ -23,13 +31,13 @@ body{
 }
 
 p, li{
-    color: #444;
+    color: var(--color-gray);
     font-size: 14px;
 }
 
 /* GENERAL SETTINGS */
 
-/* NAVBAR SETTINGS */
+/* HEADER SETTINGS */
 
 header, .navbar{
     background-color: #353d41;
@@ -45,7 +53,7 @@ header, .navbar{
 
 .navbar-brand{
     padding: 0;
-    color: white;
+    color: var(--color-white);
 }
 
 .navbar-brand > img{
@@ -53,11 +61,11 @@ header, .navbar{
 }
 
 .navbar-brand:hover{
-    color: white;
+    color: var(--color-white);
 }
 
 #navbar-links a{
-    color: white;
+    color: var(--color-white);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -68,6 +76,10 @@ header, .navbar{
     width: auto;
     height: auto;
 }
+
+/* HEADER SETTINGS */
+
+/* MAIN SETTINGS */
 
 /* SLIDER SETTINGS */
 
@@ -88,12 +100,12 @@ header, .navbar{
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 100px;
-    color: white;
+    color: var(--color-white);
 }
 
 .main-btn{
-    background-color: #65DAF9;
-    color: white;
+    background-color: var(--color-blue);
+    color: var(--color-white);
     text-transform: uppercase;
     width: 200px;
     height: 60px;
@@ -105,9 +117,9 @@ header, .navbar{
 
 .main-btn:hover{
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
     background-color: transparent;
-    border: 3px solid #65DAF9;
+    border: 3px solid var(--color-blue);
 }
 
 #mainSlider .carousel-caption{
@@ -115,7 +127,7 @@ header, .navbar{
 }
 
 .carousel-indicators .active{
-    background-color: #65DAF9;
+    background-color: var(--color-blue);
 
 }
 
@@ -128,7 +140,7 @@ header, .navbar{
 }
 
 .main-tittle{
-    color: #444;
+    color: var(--color-gray);
     margin-bottom: 65px;
     font-size: 40px;
     text-align: center;
@@ -136,7 +148,7 @@ header, .navbar{
 
 .main-tittle::after{
     content: "";
-    border-top: 2px solid #333;
+    border-top: 2px solid var(--color-gray-too);
     width: 15%;
     position: absolute;
     top: 60%;
@@ -145,7 +157,7 @@ header, .navbar{
 
 .about-title{
     font-size: 17px;
-    color: #444;
+    color: var(--color-gray);
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -153,7 +165,7 @@ header, .navbar{
 .font-config{
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
-    color: #333;
+    color: var(--color-gray-too);
     margin-left: 15px;
 }
 
@@ -167,7 +179,7 @@ header, .navbar{
 }
 
 #about-list i{
-    color: #65DAF9;
+    color: var(--color-blue);
 }
 
 /* ABOUT US */
@@ -186,7 +198,7 @@ header, .navbar{
 .service-box i{
     font-size: 36px;
     margin-bottom: 25px;
-    color: #444;
+    color: var(--color-gray);
 }
 
 .service-box h4{
@@ -195,7 +207,7 @@ header, .navbar{
 }
 
 .service-box:hover i, .service-box:hover h4{
-    color: #65DAF9;
+    color: var(--color-blue);
 }
 
 /* SERVES */
@@ -212,7 +224,7 @@ header, .navbar{
 }
 
 #data-area p{
-    color: white;
+    color: var(--color-white);
     text-align: center;
     font-size: 26px;
     margin-top: 20px;
@@ -234,10 +246,85 @@ header, .navbar{
 
 /* WORK */
 
+#apply-area{
+    height: 600px;
+}
+
+#apply-area .container-fluid, #apply-area .row{
+    height: 100%;
+}
+
+#apply-area .apply-box{
+    text-align: center;
+    padding: 130px 50px;
+}
+
 #company-img{
-    
+    background-image: url('../images/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+#pattern-img h4, #pattern-img p{
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+#pattern-img h4{
+    margin-top: 8%;
+    text-transform: uppercase;
+}
+
+#apply-btn{
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: var(--color-white);
+}
+
+#apply-btn:hover{
+    border-color: var(--color-blue);
+    background-color: var(--color-blue);
 }
 
 /* WORK */
 
-/* NAVBAR SETTINGS */
+/* PORTIFOLIO */
+
+.project-box{
+    margin-bottom: 30px;
+}
+
+#filter-btn-box{
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#portifolio-area .filter-btn{
+    color: var(--color-gray);
+    border: 1px solid var(--color-gray);
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 150px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+#portifolio-area .filter-btn.active, #portifolio-area .filter-btn:hover{
+    color: var(--color-white);
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-blue);
+}
+
+/* PORTIFOLIO */
+
+/* MAIN SETTINGS */
