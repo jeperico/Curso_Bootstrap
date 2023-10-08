@@ -302,8 +302,6 @@ header, .navbar{
 #filter-btn-box{
     margin-bottom: 50px;
     text-align: center;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 #portifolio-area .filter-btn{

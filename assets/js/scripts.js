@@ -95,6 +95,8 @@ $(document).ready(function(){
         }
     });
 
+    //Parallax
+
     setTimeout(function() {
 
         $('#data-area').parallax({imageSrc: './assets/images/cidadeparallax.png'})
@@ -102,5 +104,67 @@ $(document).ready(function(){
 
     }, 250);
 
+    //Filtro do Portifolio
+
+    /*$('.filter-btn').on('click', function() {
+
+        let type = $(this).attr('id');
+        let boxes = $('.project-box');
+
+        $('.main-btn').removeClass('active');
+        $(this).addClass('active');
+
+        function eachBoxes(type, boxes){
+            if(type === 'all'){
+                $(boxes).fadeIn();
+            } else {
+                $(boxes).each(function() {
+                    if(!$(this).hasClass(type)){
+                        $(this).fadeOut('slow');
+                    } else {
+                        $(this).fadeIn();
+                    }
+                });
+            }
+        }
+
+        switch (type) {
+            case 'seo-btn':
+                eachBoxes('seo', boxes)
+            break;
+            case 'dsg-btn':
+                eachBoxes('dsg', boxes)
+            break;
+            case 'dev-btn':
+                eachBoxes('dev', boxes)
+            break;
+            case 'all-btn':
+                eachBoxes('all', boxes)
+            break;
+        }
+    });*/
+
+    // Fazendo um filtro sozinho
+
+    let btnAll = document.getElementsByClassName("filter-btn")[0];
+    let btnDev = document.getElementsByClassName("filter-btn")[1];
+    let btnDsg = document.getElementsByClassName("filter-btn")[2];
+    let btnSeo = document.getElementsByClassName("filter-btn")[3];
+    btnAll.addEventListener('click', function(){
+        alert("a")
+    })
+    btnDev.addEventListener('click', function(){
+        alert("a")
+    })
+    btnDsg.addEventListener('click', function(){
+        alert("a")
+    })
+    btnSeo.addEventListener('click', function(){
+        alert("a")
+    }) 
+
+    function filter(){
+        
+    }
 
 });
